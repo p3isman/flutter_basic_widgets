@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
             title: Text(element['texto']),
             leading: getIcon(element['icon']),
             trailing: Icon(Icons.keyboard_arrow_right, color: Colors.blue),
-            onTap: () {
+              onTap: () {
               // To navigate to another page we need the BuildContext and a MaterialPageRoute for destination
               Navigator.pushNamed(context, element['ruta']);
             },
