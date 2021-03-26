@@ -11,7 +11,6 @@ class AlertPage extends StatelessWidget {
         child: ElevatedButton(
           child: Text('Show alert'),
           style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all(Colors.blue),
             elevation: MaterialStateProperty.all(10.0),
           ),
           onPressed: () {

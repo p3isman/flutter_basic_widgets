@@ -8,12 +8,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Components')),
-      body: _list(),
+      body: _pagesList(),
     );
   }
 
   /// Load data for the list from [menuProvider] with FutureBuilder
-  Widget _list() {
+  Widget _pagesList() {
     return FutureBuilder(
       future: menuProvider.loadData(),
 
@@ -37,8 +37,8 @@ class HomePage extends StatelessWidget {
           ListTile(
             title: Text(element['texto']),
             leading: getIcon(element['icon']),
-            trailing: Icon(Icons.keyboard_arrow_right, color: Colors.blue),
-              onTap: () {
+            trailing: Icon(Icons.keyboard_arrow_right),
+            onTap: () {
               // To navigate to another page we need the BuildContext and a MaterialPageRoute for destination
               Navigator.pushNamed(context, element['ruta']);
             },
