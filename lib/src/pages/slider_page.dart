@@ -1,3 +1,4 @@
+import 'package:components/src/utils/spinners.dart';
 import 'package:flutter/material.dart';
 
 class SliderPage extends StatefulWidget {
@@ -35,6 +36,7 @@ class _SliderPageState extends State<SliderPage> {
                 'Tamaño: $_size',
                 textAlign: TextAlign.center,
               )),
+          spinner,
         ]),
       ),
     );
