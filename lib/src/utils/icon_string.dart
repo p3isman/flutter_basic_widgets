@@ -6,8 +6,7 @@ final _icons = <String, IconData>{
   'folder_open': Icons.folder_open,
   'donut_large': Icons.donut_large,
   'input': Icons.input,
-  'slider': Icons.toggle_off_outlined,
-  'listview': Icons.list,
+  'slider': Icons.toggle_off_outlined
 };
 
 // Return icon from string
