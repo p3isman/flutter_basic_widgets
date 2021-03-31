@@ -50,7 +50,7 @@ class CardPage extends StatelessWidget {
       elevation: 10.0,
       // Adjust content to be inside the card
       clipBehavior: Clip.hardEdge,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
       child: Column(
         children: [
           // Show temporary image while it is loading
